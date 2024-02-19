@@ -1,9 +1,11 @@
 'use client'
-import { Box, Flex, Heading, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react'
 import React, { useState, useEffect } from 'react'
 import { Banner } from './components/Banner'
 import fgts from '@/images/produtos/fgts.png'
 import crefaz from '@/images/produtos/crefaz.png'
+import maisvalor from '@/images/produtos/maisvalor.png'
+import { FaArrowDown } from 'react-icons/fa'
 
 export default function Start() {
   const details = [
@@ -24,11 +26,23 @@ export default function Start() {
       img: crefaz,
       title: 'Contrate empréstimo com sua conta de luz',
       sub1: 'Contrate empréstimo na Crefaz com débito na sua conta de luz. Prático e rápido.',
-      sub2: 'Temos uma solução para cada momento da sua vida.',
+      sub2: '',
       gradient: [
         '#F09819',
         '-webkit-linear-gradient(to right, #F09819, #FF512F)',
         'linear-gradient(to right, #F09819, #FF512F)',
+      ],
+    },
+    {
+      prod: 'MAIS VALOR',
+      img: maisvalor,
+      title: 'Contrate todo e qualquer tipo de empréstimo',
+      sub1: 'Vem com a gente nessa!',
+      sub2: 'Temos uma solução para cada momento da sua vida.',
+      gradient: [
+        '#52c234',
+        '-webkit-linear-gradient(to right, #52c234, #061700)',
+        'linear-gradient(to right, #52c234, #061700)',
       ],
     },
   ];
@@ -44,6 +58,49 @@ export default function Start() {
 
     return () => clearInterval(intervalId);
   }, []);
+
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+
+  };
+
+  const handleIntersection = (entries, observer) => {
+    entries.forEach((entry) => {
+      const sectionId = entry.target.id;
+      const listItem = document.querySelector(`[data-section="${sectionId}"]`);
+
+      if (entry.isIntersecting) {
+        listItem.style.borderBottom = '2px solid #229544';
+      } else {
+        listItem.style.borderBottom = 'none';
+      }
+    });
+  };
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('.scroll-section');
+    const observer = new IntersectionObserver(handleIntersection, {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    });
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
 
   return (
     <Flex
@@ -68,7 +125,23 @@ export default function Start() {
       </Box>
       <Box zIndex={9} bg={'white'} mt={-8} display={'flex'} flexDir={'column'} color={'black'} alignItems={'center'} justifyContent={'center'} w={'100%'} p={1} h={'100%'}>
         <Heading size={'lg'} textTransform={'uppercase'} m={'0 auto'}>Descubra Muito Mais !!!</Heading>
-        <Text fontWeight={'bold'}>Desça e descubra um mar de oportunidades...</Text>
+        <Button
+      colorScheme="whatsapp"
+      display="flex"
+      alignItems="center"
+      justifyContent="center"
+      gap={2}
+      data-section="assessments"
+      onClick={() => scrollToSection('assessments')}
+      mt={6}
+      textAlign="center"
+      fontWeight="bold"
+      _hover={{ transform: 'translateY(-2px)' }}
+      _active={{ transform: 'translateY(2px)' }}
+    >
+      <Text>Navegar</Text>
+      <FaArrowDown />
+    </Button>
       </Box>
 
     </Flex>

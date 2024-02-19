@@ -79,10 +79,10 @@ export function Banner({ img, title, sub1, sub2, func, prod }) {
 
   return (
     <>
-      <Box w={'100%'} textAlign={'left'} p={{ base: 4, md: 20 }} h={'100%'} position="relative" left={{ base: '2%', md: '1%' }} top={{ base: '15%', md: '15%' }}>
+      <Box zIndex={9} w={'100%'} textAlign={'left'} p={{ base: 4, md: 20 }} h={'100%'} position="relative" left={{ base: '2%', md: '1%' }} top={{ base: '15%', md: '15%' }}>
         <Heading textTransform={'uppercase'} size={{ base: 'xl', md: 'lg' }}>{title}</Heading>
-        <Text fontSize={20} fontWeight={'bold'} my={4}>{sub1}</Text>
-        <Text fontSize={20} fontWeight={'bold'}>{sub2}</Text>
+        <Text zIndex={7} fontSize={20} fontWeight={'bold'} my={4}>{sub1}</Text>
+        <Text zIndex={7} fontSize={20} fontWeight={'bold'}>{sub2}</Text>
         <Flex flexDir={{ base: 'column', md: 'row' }}>
           <Button w={{ base: '50%', md: '10%' }} zIndex={9} textTransform={'uppercase'} mt={8} onClick={onOpen}>
             Contrate já !
@@ -100,12 +100,12 @@ export function Banner({ img, title, sub1, sub2, func, prod }) {
         bottom={prod === 'CREFAZ' ?
           { base: '51.5%', md: '96.5%' }
           :
-          { base: '37%', md: '75%' }
+          { base: '42%', md: '75%' }
         }
         w={prod === 'CREFAZ' ?
           { base: '554px', md: '900px' }
           :
-          { base: '400px', md: '700px' }
+          { base: '450px', md: '700px' }
         }>
         <Image src={img} alt='fgts mais valor' />
       </Box>
