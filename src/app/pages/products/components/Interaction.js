@@ -153,7 +153,7 @@ export default function Interaction() {
   };
 
   const gerarTextoWhatsapp = () => {
-    const textoFormatado = `Olá, meu nome é ${dadosUsuario.nome || 'Não informado'}, meu numero é ${dadosUsuario.telefone || 'Não informado'} anos, sou ${dadosUsuario.profissao || 'Não informado'} e tenho interesse em adquirir ${dadosUsuario.produto || 'Não informado'}. ${dadosUsuario.conhecimento === 'Sim' ? 'Eu já conheço o produto.' : 'Gostaria de saber mais sobre o produto.'} Encontrei a Mais Valor atraves de um anuncio, e a paginá de auto contratação me convenceu a dar uma chance!`;
+    const textoFormatado = `Olá, meu nome é ${dadosUsuario.nome || 'Não informado'}, sou ${dadosUsuario.profissao || 'Não informado'} e tenho interesse em adquirir ${dadosUsuario.produto || 'Não informado'}. ${dadosUsuario.conhecimento === 'Sim' ? 'Eu já conheço o produto. Mas quero saber mais.' : 'Não conheço, mas gostaria de saber mais sobre o produto.'} Encontrei a Mais Valor atraves de um anuncio, e a paginá de auto contratação me convenceu a dar uma chance!`;
 
     return encodeURIComponent(textoFormatado);
   };
