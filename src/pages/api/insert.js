@@ -1,3 +1,4 @@
+'use server'
 import { connect } from "@/utils/database";
 
 const cleanPhoneNumber = (phoneNumber) => {

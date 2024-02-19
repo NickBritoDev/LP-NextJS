@@ -1,3 +1,4 @@
+'use client'
 import { Box, Flex, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
 import { BsBinoculars, BsCashCoin, BsGlobe, BsInfoCircle, BsPeople, BsPinMapFill } from "react-icons/bs";

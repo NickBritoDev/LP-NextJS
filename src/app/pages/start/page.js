@@ -1,3 +1,4 @@
+'use client'
 import { Box, Flex, Heading, Text } from '@chakra-ui/react'
 import React, { useState, useEffect } from 'react'
 import { Banner } from './components/Banner'

@@ -1,3 +1,4 @@
+'use client'
 import { AlertDialog, AlertDialogBody, AlertDialogContent, AlertDialogFooter, AlertDialogHeader, AlertDialogOverlay, Box, Button, Flex, FormControl, FormLabel, Heading, Input, Text, useDisclosure, useToast } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import Image from 'next/image'

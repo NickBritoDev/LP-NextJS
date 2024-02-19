@@ -1,3 +1,4 @@
+'use client'
 import { Divider, Flex, Text, } from '@chakra-ui/react'
 import { FaStar } from "react-icons/fa";
 import { RiMapPinUserFill } from "react-icons/ri";
