@@ -122,6 +122,9 @@ export default function InteractionWidget() {
             case 'Olá! Qual seu nome completo?':
               newData.nome = resposta;
               break;
+            case 'Qual sua profissão?':
+              newData.profissao = resposta;
+              break;
             case 'Qual seu telefone?':
               newData.telefone = resposta;
               break;
@@ -134,6 +137,7 @@ export default function InteractionWidget() {
             default:
               break;
           }
+          setDadosUsuario((prevDadosUsuario) => ({ ...prevDadosUsuario, ...newData }));
 
           return newData;
         });
@@ -149,8 +153,7 @@ export default function InteractionWidget() {
   };
 
   const gerarTextoWhatsapp = () => {
-    const { 'Olá! Qual seu nome completo?': nome, 'Quantos anos você tem?': idade, 'Qual sua profissão?': profissao, 'Qual produto você gostaria de adquirir?': produto, 'Você conhece o produto selecionado?': conhecimento } = dadosUsuario;
-    const textoFormatado = `Olá, meu nome é ${nome || 'Não informado'}, tenho ${idade || 'Não informado'} anos, sou ${profissao || 'Não informado'} e tenho interesse em adquirir ${produto || 'Não informado'}. ${conhecimento === 'Sim' ? 'Eu já conheço o produto.' : 'Gostaria de saber mais sobre o produto.'} Encontrei a Mais Valor atraves de um anuncio, e a paginá de auto contratação me convenceu a dar uma chance!`;
+    const textoFormatado = `Olá, meu nome é ${dadosUsuario.nome || 'Não informado'}, meu numero é ${dadosUsuario.telefone || 'Não informado'} anos, sou ${dadosUsuario.profissao || 'Não informado'} e tenho interesse em adquirir ${dadosUsuario.produto || 'Não informado'}. ${dadosUsuario.conhecimento === 'Sim' ? 'Eu já conheço o produto.' : 'Gostaria de saber mais sobre o produto.'} Encontrei a Mais Valor atraves de um anuncio, e a paginá de auto contratação me convenceu a dar uma chance!`;
 
     return encodeURIComponent(textoFormatado);
   };

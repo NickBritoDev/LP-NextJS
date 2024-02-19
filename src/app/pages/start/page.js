@@ -66,7 +66,7 @@ export default function Start() {
           sub2={details[currentBanner].sub2}
         />
       </Box>
-      <Box mt={-8} display={'flex'} flexDir={'column'} color={'black'} alignItems={'center'} justifyContent={'center'} w={'100%'} p={1}>
+      <Box zIndex={9} bg={'white'} mt={-8} display={'flex'} flexDir={'column'} color={'black'} alignItems={'center'} justifyContent={'center'} w={'100%'} p={1} h={'100%'}>
         <Heading size={'lg'} textTransform={'uppercase'} m={'0 auto'}>Descubra Muito Mais !!!</Heading>
         <Text fontWeight={'bold'}>Desça e descubra um mar de oportunidades...</Text>
       </Box>

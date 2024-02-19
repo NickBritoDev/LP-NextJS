@@ -132,20 +132,24 @@ export default function Contact() {
               <Select variant='flushed' placeholder="Escolha um produto" name="produto" value={formData.produto} onChange={handleChange}>
                 <option style={{ color: 'black' }} value={'CREFAZ'}>CREFAZ</option>
                 <option style={{ color: 'black' }} value={'FGTS'}>FGTS</option>
-                <option style={{ color: 'black' }} value={'IMOBILIARIO'}>IMOBILIARIO</option>
-                <option style={{ color: 'black' }} value={'CONSIGNADO'}>CONSIGNADO</option>
-                <option style={{ color: 'black' }} value={'SAQUE ANIVERSARIO'}>SAQUE ANIVERSARIO</option>
+                <option style={{ color: 'black' }} value={'Crédito Consignado'}>Crédito Consignado</option>
+                <option style={{ color: 'black' }} value={'Cartão Beneficio'}>Cartão Beneficio</option>
+                <option style={{ color: 'black' }} value={'Credito Imobiliário (CGI e Aquisição)'}>Credito Imobiliário (CGI e Aquisição)</option>
+                <option style={{ color: 'black' }} value={'Crédito Pessoal'}>Crédito Pessoal</option>
+                <option style={{ color: 'black' }} value={'Consórcio'}>Consórcio</option>
+                <option style={{ color: 'black' }} value={'Energia Solar'}>Energia Solar</option>
               </Select>
             </FormControl>
 
             <FormControl mb={4}>
               <FormLabel fontWeight={'bold'} mb={-2}>Selecione uma pergunta</FormLabel>
               <Select variant='flushed' placeholder="Qual sua dúvida?" name="duvida" value={formData.duvida} onChange={handleChange}>
-                <option style={{ color: 'black' }} value={'O que é crefaz ?'}>O que é crefaz ?</option>
-                <option style={{ color: 'black' }} value={'Tenho direito ao FGTS ?'}>Tenho direito ao FGTS ?</option>
                 <option style={{ color: 'black' }} value={'Como funciona ?'}>Como funciona ?</option>
                 <option style={{ color: 'black' }} value={'É seguro ?'}>É seguro ?</option>
+                <option style={{ color: 'black' }} value={'Tenho direito ao FGTS ?'}>Tenho direito ao FGTS ?</option>
+                <option style={{ color: 'black' }} value={'É possivel fazer com nome sujo ?'}>É possivel fazer com nome sujo ?</option>
                 <option style={{ color: 'black' }} value={'Qual o percentual de juros ?'}>Qual o percentual de juros ?</option>
+                <option style={{ color: 'black' }} value={'Consigo adquirir esse produto ?'}>Consigo adquirir esse produto ?</option>
               </Select>
             </FormControl>
 

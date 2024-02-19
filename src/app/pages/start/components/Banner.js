@@ -91,7 +91,7 @@ export function Banner({ img, title, sub1, sub2, func, prod }) {
         </Flex>
       </Box>
 
-      <Box position="relative"
+      <Box zIndex={0} position="relative"
         left={prod === 'CREFAZ' ?
           { base: '-15%', md: '50%' }
           :
