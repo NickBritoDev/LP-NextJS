@@ -2,6 +2,7 @@
 'use client'
 import React from 'react'
 import { Providers } from '@/app/provider'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function RootLayout({
   children
@@ -9,7 +10,10 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body style={{ overflow: 'hidden' }}>
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+          <SpeedInsights />
+        </Providers>
       </body>
     </html>
   )
