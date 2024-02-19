@@ -21,30 +21,30 @@ export default function Start() {
         'linear-gradient(to right, #4b6cb7, #182848)',
       ],
     },
-    {
-      prod: 'CREFAZ',
-      img: crefaz,
-      title: 'Contrate empréstimo com sua conta de luz',
-      sub1: 'Contrate empréstimo na Crefaz com débito na sua conta de luz. Prático e rápido.',
-      sub2: '',
-      gradient: [
-        '#F09819',
-        '-webkit-linear-gradient(to right, #F09819, #FF512F)',
-        'linear-gradient(to right, #F09819, #FF512F)',
-      ],
-    },
-    {
-      prod: 'MAIS VALOR',
-      img: maisvalor,
-      title: 'Contrate todo e qualquer tipo de empréstimo',
-      sub1: 'Vem com a gente nessa!',
-      sub2: 'Temos uma solução para cada momento da sua vida.',
-      gradient: [
-        '#52c234',
-        '-webkit-linear-gradient(to right, #52c234, #061700)',
-        'linear-gradient(to right, #52c234, #061700)',
-      ],
-    },
+    // {
+    //   prod: 'CREFAZ',
+    //   img: crefaz,
+    //   title: 'Contrate empréstimo com sua conta de luz',
+    //   sub1: 'Contrate empréstimo na Crefaz com débito na sua conta de luz. Prático e rápido.',
+    //   sub2: '',
+    //   gradient: [
+    //     '#F09819',
+    //     '-webkit-linear-gradient(to right, #F09819, #FF512F)',
+    //     'linear-gradient(to right, #F09819, #FF512F)',
+    //   ],
+    // },
+    // {
+    //   prod: 'MAIS VALOR',
+    //   img: maisvalor,
+    //   title: 'Contrate todo e qualquer tipo de empréstimo',
+    //   sub1: 'Vem com a gente nessa!',
+    //   sub2: 'Temos uma solução para cada momento da sua vida.',
+    //   gradient: [
+    //     '#52c234',
+    //     '-webkit-linear-gradient(to right, #52c234, #061700)',
+    //     'linear-gradient(to right, #52c234, #061700)',
+    //   ],
+    // },
   ];
 
   const [currentBanner, setCurrentBanner] = useState(0);

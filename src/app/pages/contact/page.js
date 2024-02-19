@@ -130,14 +130,15 @@ export default function Contact() {
             <FormControl mb={4}>
               <FormLabel fontWeight={'bold'} mb={-2}>Selecione um produto</FormLabel>
               <Select variant='flushed' placeholder="Escolha um produto" name="produto" value={formData.produto} onChange={handleChange}>
-                <option style={{ color: 'black' }} value={'CREFAZ'}>CREFAZ</option>
                 <option style={{ color: 'black' }} value={'FGTS'}>FGTS</option>
+                <option style={{ color: 'black' }} value={'Outros Produtos'}>Outros Produtos</option>
+                {/* <option style={{ color: 'black' }} value={'CREFAZ'}>CREFAZ</option>
                 <option style={{ color: 'black' }} value={'Crédito Consignado'}>Crédito Consignado</option>
                 <option style={{ color: 'black' }} value={'Cartão Beneficio'}>Cartão Beneficio</option>
                 <option style={{ color: 'black' }} value={'Credito Imobiliário (CGI e Aquisição)'}>Credito Imobiliário (CGI e Aquisição)</option>
                 <option style={{ color: 'black' }} value={'Crédito Pessoal'}>Crédito Pessoal</option>
                 <option style={{ color: 'black' }} value={'Consórcio'}>Consórcio</option>
-                <option style={{ color: 'black' }} value={'Energia Solar'}>Energia Solar</option>
+                <option style={{ color: 'black' }} value={'Energia Solar'}>Energia Solar</option> */}
               </Select>
             </FormControl>
 

@@ -21,24 +21,21 @@ export default function About() {
       <Box w={{ base: '90%', md: '60%' }} display={'flex'} flexDir={'column'} alignItems={'center'} textAlign={'center'} justifyContent={'center'}>
 
         <Flex mt={4} flexDir={{ base: 'column' }} gap={4} w={'100%'} alignItems={'flex-start'} justifyContent={'flex-start'}>
-          <Box  p={2} rounded={'xl'} pb={6} w={'100%'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'flex-start'}>
+          <Box p={2} rounded={'xl'} pb={6} w={'100%'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'flex-start'}>
             <Flex alignItems={'center'} justifyContent={'space-between'} gap={2}>
-              <BsBinoculars size={30} color='green' />
-              <Text>VISÃO</Text>
+              <Text fontWeight={'bold'}>VISÃO</Text>
             </Flex>
             <Text>Queremos ser referência na venda de produtos e serviços financeiros. Com paixão, alta performance e orgulho.</Text>
           </Box>
-          <Box  p={2} rounded={'xl'} pb={6} w={'100%'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'flex-start'}>
+          <Box p={2} rounded={'xl'} pb={6} w={'100%'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'flex-start'}>
             <Flex alignItems={'center'} justifyContent={'space-between'} gap={2}>
-              <BsInfoCircle size={30} color='green' />
-              <Text>VALORES</Text>
+              <Text fontWeight={'bold'}>VALORES</Text>
             </Flex>
             <Text>Transparência, Solidez, Integridade e Confiança, Respeito nas relações, Qualidade nas entregas, Simplicidade, Comprometimento, Proatividade, Capacidade de Realização, Coragem, Ousadia, Comunicação clara e precisa, Sentimento de Pertencimento, Ética e Credibilidade, Dor de dono.</Text>
           </Box>
-          <Box  p={2} rounded={'xl'} pb={6} w={'100%'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'flex-start'}>
+          <Box p={2} rounded={'xl'} pb={6} w={'100%'} display={'flex'} flexDir={'column'} alignItems={'center'} justifyContent={'flex-start'}>
             <Flex alignItems={'center'} justifyContent={'space-between'} gap={2}>
-              <BsGlobe size={30} color='green' />
-              <Text>MISSÃO</Text>
+              <Text fontWeight={'bold'}>MISSÃO</Text>
             </Flex>
             <Text>Sermos os melhores no que fazemos, inovando e melhorando continuamente.</Text>
           </Box>

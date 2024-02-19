@@ -84,10 +84,10 @@ export function Banner({ img, title, sub1, sub2, func, prod }) {
         <Text zIndex={7} fontSize={20} fontWeight={'bold'} my={4}>{sub1}</Text>
         <Text zIndex={7} fontSize={20} fontWeight={'bold'}>{sub2}</Text>
         <Flex flexDir={{ base: 'column', md: 'row' }}>
-          <Button w={{ base: '50%', md: '10%' }} zIndex={9} textTransform={'uppercase'} mt={8} onClick={onOpen}>
+          <Button w={{ base: '50%', md: '10%' }} zIndex={9} textTransform={'uppercase'} mt={20} onClick={onOpen}>
             Contrate já !
           </Button>
-          <Button w={{ base: '50%', md: '10%' }} zIndex={9} ml={{ base: 0, md: 2 }} mt={{ base: 2, md: 8 }} onClick={func}>Mais Produtos</Button>
+          <Button display={'none'} w={{ base: '50%', md: '10%' }} zIndex={9} ml={{ base: 0, md: 2 }} mt={{ base: 2, md: 8 }} onClick={func}>Mais Produtos</Button>
         </Flex>
       </Box>
 
@@ -95,17 +95,17 @@ export function Banner({ img, title, sub1, sub2, func, prod }) {
         left={prod === 'CREFAZ' ?
           { base: '-15%', md: '50%' }
           :
-          { base: '6%', md: '50%' }
+          { base: '-2%', md: '50%' }
         }
         bottom={prod === 'CREFAZ' ?
           { base: '51.5%', md: '96.5%' }
           :
-          { base: '42%', md: '75%' }
+          { base: '39%', md: '75%' }
         }
         w={prod === 'CREFAZ' ?
           { base: '554px', md: '900px' }
           :
-          { base: '450px', md: '700px' }
+          { base: '420px', md: '700px' }
         }>
         <Image src={img} alt='fgts mais valor' />
       </Box>

@@ -16,8 +16,8 @@ export default function Assessments() {
       paddingBottom={{ base: 20, md: 24 }}
     >
       <Box w={'100%'}>
-        <Flex mt={{ base: -12, md: -6 }} mb={{ base: 0, md: 10 }} flexDir={'column'} mx={'auto'} alignItems={'center'} justifyContent={'center'} textAlign={'center'} w={'100%'} >
-          <Heading color={'green'} size={{ base: 'sm', md: 'lg' }}>
+        <Flex mt={{ base: -20, md: -6 }} mb={{ base: 0, md: 10 }} flexDir={'column'} mx={'auto'} alignItems={'center'} justifyContent={'center'} textAlign={'center'} w={'100%'} >
+          <Heading color={'green'} size={{ base: 'lg', md: 'lg' }}>
             Nos conheça atravéz de nossos clientes
             <Divider />
           </Heading>

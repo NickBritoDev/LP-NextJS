@@ -27,14 +27,16 @@ const perguntas = [
   {
     texto: 'Qual produto você gostaria de adquirir?',
     tipo: 'botoes',
-    opcoes: ['Crédito Consignado',
-      'Cartão Beneficio',
+    opcoes: [
+      // 'Crédito Consignado',
+      // 'Cartão Beneficio',
       'FGTS',
-      'Credito Imobiliário (CGI e Aquisição)',
-      'Crédito Pessoal',
-      'Consórcio',
-      'Energia Solar',
-      'Crefaz',
+      'Outros Produtos',
+      // 'Credito Imobiliário (CGI e Aquisição)',
+      // 'Crédito Pessoal',
+      // 'Consórcio',
+      // 'Energia Solar',
+      // 'Crefaz',
     ],
   },
   {
