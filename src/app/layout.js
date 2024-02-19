@@ -12,8 +12,8 @@ export default function RootLayout({
       <body style={{ overflow: 'hidden' }}>
         <Providers>
           {children}
-          <SpeedInsights />
         </Providers>
+        <SpeedInsights />
       </body>
     </html>
   )
